@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tb appointment tb patient FK" directorySegmentName="seg_0" id="4B61DF17-2F96-DBCE-C1E1-56A526766E37">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 22:39:19 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<sourcePk>10C4FDD4-D38A-88F0-0AD3-F74F885F5A2A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AFB06BA6-0B82-68ED-14B1-920CC2E4E992</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A6626277-8352-4812-F855-781A5B27345A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

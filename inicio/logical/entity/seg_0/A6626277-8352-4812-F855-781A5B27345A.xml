@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A6626277-8352-4812-F855-781A5B27345A" name="tb appointment">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 19:04:58 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="491A38E2-5E22-AB5C-BD83-545027AC2091">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 19:05:38 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE APPOINTMENT" id="A475153E-A8CD-7D02-7BEC-4984B8D4DEF5">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 19:05:57 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIME APPOINTMENT" id="5A8FE1B2-BD75-D676-6255-31B1826463BB">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 19:06:14 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED AT" id="1CE85743-9CAB-AD3C-FB58-ED346F5D0388">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 19:13:29 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="patient ID" id="5C3EB4D2-F3CA-D8DA-6D07-CA1821E49874">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 22:39:19 UTC</createdTime>
+<generatorID>4B61DF17-2F96-DBCE-C1E1-56A526766E37</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<referedAttribute>DD2FED63-F9E0-E28D-2455-8EA1EC92FEDD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user ID" id="C01CD0AD-9A3C-C3E7-5BC8-AE67BA8F50E0">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 22:50:28 UTC</createdTime>
+<generatorID>3D542849-F0F2-E4DB-C678-179C525C5C40</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<referedAttribute>A926AA69-B8E9-D159-3B94-8B5926DBD50E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic ID" id="0DDF8A11-0F63-80AE-7D01-474F316F83FF">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 22:58:36 UTC</createdTime>
+<generatorID>4F82EFEA-0B5F-4C1F-78DB-CC341E8B5828</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<referedAttribute>3AEFD597-DA82-D3C0-9FD7-D72283B7504C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procedure type ID" id="BC0C68FE-1C37-3E05-42FE-1C45AA553B24">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 02:18:01 UTC</createdTime>
+<generatorID>46651D5D-00BB-4BE4-A1F0-100886E3DC96</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<referedAttribute>386C9E4D-85C0-C2B8-EDFD-BB057020C48F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procedure validation ID" id="164468C5-AAFF-3132-CC83-F5D650B27845">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:54:38 UTC</createdTime>
+<generatorID>A6888A45-C202-2BF6-963D-CC2D96FF5EDF</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<referedAttribute>E6049527-9739-558C-AFF7-A253FFC681C4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="04B8FDD0-74E6-70BF-78A2-50F3F00E800A" name="tb_appointment_PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-03 19:05:50 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>491A38E2-5E22-AB5C-BD83-545027AC2091</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00389593-6A56-D748-A043-7E7FBC91CCBF" name="tb_patient">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>AFB06BA6-0B82-68ED-14B1-920CC2E4E992</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A1ADC52B-EBD0-B187-1599-7520A95EB9CA">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>DD2FED63-F9E0-E28D-2455-8EA1EC92FEDD</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH_DATE" id="12F0793B-A575-0724-2A9F-D7DF3E82B9AF">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>3C30AB35-46DA-7FC3-0FBE-85509F073F8A</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_AT" id="08046C39-4BC8-8650-5F9A-84A2B07E5819">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>7BA81554-9383-3B42-2C7A-A9F0CAD2B52F</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_CARD" id="53311E3A-6D02-50E0-1516-C3CE1EE67373">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>7591AC22-8CF2-71F9-056F-2346C3F54267</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="1BECDF8C-CC0A-3DFF-E84E-A4525E904ABD">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>6F84208E-B39E-8AFD-C5E2-4E68B56C5516</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RG" id="F85A99F1-AE20-5BE5-DED4-244F50EF15AF">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>E7588E3A-4427-F479-4E9E-2C7BE460594C</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="785930E1-0627-0171-63BB-AF5C47EABAD3" name="tb_patient_PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<generatorID>10C4FDD4-D38A-88F0-0AD3-F74F885F5A2A</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1ADC52B-EBD0-B187-1599-7520A95EB9CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

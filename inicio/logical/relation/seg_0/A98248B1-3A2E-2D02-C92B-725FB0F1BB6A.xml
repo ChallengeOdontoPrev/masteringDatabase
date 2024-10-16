@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tb procedure validation tb procedure type FK" directorySegmentName="seg_0" id="A98248B1-3A2E-2D02-C92B-725FB0F1BB6A">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-07 02:18:04 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<engineerTo>
+<item key="1F76D2A0-FE97-C282-B582-4FC6EFBE4B6C" value="true"/>
+</engineerTo>
+<sourcePk>D7E41AD5-EE36-A7A6-A332-81A5AC2209B7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>668F4A54-3E71-D904-78C0-8A595CB27079</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2991E5CC-6046-C60A-8F5E-B78194ABB1CB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
