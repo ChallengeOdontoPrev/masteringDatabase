@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DD2B859-7B24-91A5-3792-70C196566C4E" name="tb_appointment">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9641BEEC-49F5-BBCE-3A86-3619A1BEEBAF" name="tb_appointment">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>A6626277-8352-4812-F855-781A5B27345A</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="138A3E0C-34B1-14AB-D192-B4886A7E95C7">
+<Column name="ID" id="CD3093CD-1AD9-CEA1-945E-DE2C8D0DFBB3">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>491A38E2-5E22-AB5C-BD83-545027AC2091</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DATE_APPOINTMENT" id="865204CE-85FC-FBF5-3DEB-98E34D8FF9D1">
+<Column name="DATE_APPOINTMENT" id="6B554FF2-8097-35B2-3CD7-FBDDC359301F">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>A475153E-A8CD-7D02-7BEC-4984B8D4DEF5</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TIME_APPOINTMENT" id="052A4D40-0A15-31EA-421C-B47D29AC8A42">
+<Column name="TIME_APPOINTMENT" id="C9579BC0-7278-D61A-D6AC-064AE76579F1">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>5A8FE1B2-BD75-D676-6255-31B1826463BB</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CREATED_AT" id="4140422A-67C3-D080-B853-E33844812489">
+<Column name="CREATED_AT" id="C19726DD-8406-895A-2365-66587596A1B4">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>1CE85743-9CAB-AD3C-FB58-ED346F5D0388</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="patient_ID" id="59A061D5-F96A-B306-0917-7698E79C5869">
+<Column name="tb_patient_ID" id="7CBFA773-7ECA-61F4-84EA-833D745E00AF">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>5C3EB4D2-F3CA-D8DA-6D07-CA1821E49874</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,12 +68,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="345354AA-45E6-B51B-649D-9F833E78BF74" referredColumn="A1ADC52B-EBD0-B187-1599-7520A95EB9CA"/>
+<colAssociation fkAssociation="2BCCB2B2-B01B-531A-957C-75A099D0592B" referredColumn="9570EA54-5034-D3BC-04EF-0C37F25D6E73"/>
 </associations>
 </Column>
-<Column name="user_ID" id="05B5D6B6-CC45-B311-B5F3-D2C71CA11A3F">
+<Column name="tb_user_ID" id="DB78904C-0CE0-4C46-05D9-33A66FF148EF">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>C01CD0AD-9A3C-C3E7-5BC8-AE67BA8F50E0</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -84,12 +84,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="28D25E66-CC12-EA55-889A-9221CCBA3D95" referredColumn="D449E7CB-89F7-5ED8-B650-9A6CEAD80495"/>
+<colAssociation fkAssociation="B43BD1AF-E565-A970-B879-63A6A0AE3605" referredColumn="0A9A8CF1-8E8A-B0E1-0940-AE80E0067E7B"/>
 </associations>
 </Column>
-<Column name="clinic_ID" id="184DF62A-FD73-6BA7-66C4-7C80D29EA3CB">
+<Column name="tb_clinic_ID" id="96522214-DABF-A30C-C9B6-02B85BE1991F">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>0DDF8A11-0F63-80AE-7D01-474F316F83FF</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -100,27 +100,28 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C4066CA3-AE88-62ED-FA84-CB9D4B20AEB2" referredColumn="E34D0A58-8CBC-A402-4757-921F9831F0C9"/>
+<colAssociation fkAssociation="DE3D43C8-22B9-B055-67BC-FDD08C38C851" referredColumn="5B3B10EC-32BA-A8D4-8A11-D3B08FE0639D"/>
 </associations>
 </Column>
-<Column name="procedure_type_ID" id="2C137373-ACFF-8146-BFEB-7A6FCED1DD32">
+<Column name="tb_procedure_type_ID" id="8A1820D7-B7F7-AC50-A885-ED3FC959A039">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>BC0C68FE-1C37-3E05-42FE-1C45AA553B24</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A605A109-4645-A17F-F6B4-BADDDCE786FF" referredColumn="A94DC681-2DC0-B13B-BFCC-D4E1221139CD"/>
+<colAssociation fkAssociation="0E4896BF-3907-F4AD-7531-D07F178CBEBF" referredColumn="6CCAA22D-F12D-0317-88AA-7B221E4CAAB5"/>
 </associations>
 </Column>
-<Column name="procedure_validation_ID" id="8EDA3D36-9821-FAE8-1367-77CA1C18E59D">
+<Column name="tb_procedure_validation_ID" id="AA717176-377E-10BF-F317-A5B595D34FB3">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>164468C5-AAFF-3132-CC83-F5D650B27845</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -131,87 +132,87 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A203AAC0-9A01-4EBE-49CA-8A53A1939CCB" referredColumn="554BE78C-4B24-A86A-024F-BC3A90A09ECB"/>
+<colAssociation fkAssociation="3ED9CB6B-A7B7-8AAA-F16A-AE193F5674F6" referredColumn="7CC74A80-1911-EFE9-8708-CB1ABAE1C123"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="87DD6818-F844-1B40-61EA-76B11EDCA168" name="tb_appointment_PK">
+<ind_PK_UK id="07CF5C00-3008-36E5-DAAC-17A71EF4CFFB" name="tb_appointment_PK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>04B8FDD0-74E6-70BF-78A2-50F3F00E800A</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="138A3E0C-34B1-14AB-D192-B4886A7E95C7"/>
+<colUsage columnID="CD3093CD-1AD9-CEA1-945E-DE2C8D0DFBB3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2C1391EA-0F08-4192-3920-2693F279AD59" name="tb_appointment__IDX">
+<ind_PK_UK id="D7051D55-FB8F-A54C-4B6A-AFAB2A3664E1" name="tb_appointment__IDX">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <ownerDesignName>inicio</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>A6888A45-C202-2BF6-963D-CC2D96FF5EDF</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="8EDA3D36-9821-FAE8-1367-77CA1C18E59D"/>
+<colUsage columnID="AA717176-377E-10BF-F317-A5B595D34FB3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="ED9048F8-863B-B6D4-8071-968DFDDD3150" name="tb_appointment_tb_procedure_validation_FK">
+<ind_PK_UK id="CDE006D8-7C56-CE15-83D6-1F18DE8EDAA1" name="tb_appointment_tb_clinic_FK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>A6888A45-C202-2BF6-963D-CC2D96FF5EDF</generatorID>
-<ownerDesignName>inicio</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="8EDA3D36-9821-FAE8-1367-77CA1C18E59D"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="0FC2861C-0DF3-2209-CECC-05ACDF76B890" name="tb_appointment_tb_clinic_FK">
-<createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>4F82EFEA-0B5F-4C1F-78DB-CC341E8B5828</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="184DF62A-FD73-6BA7-66C4-7C80D29EA3CB"/>
+<colUsage columnID="96522214-DABF-A30C-C9B6-02B85BE1991F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4FF44CD7-F442-696B-4946-BD8F69AA1FAA" name="tb_appointment_tb_patient_FK">
+<ind_PK_UK id="89290375-365D-7EE2-E5DD-41A65C716C07" name="tb_appointment_tb_patient_FK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>4B61DF17-2F96-DBCE-C1E1-56A526766E37</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="59A061D5-F96A-B306-0917-7698E79C5869"/>
+<colUsage columnID="7CBFA773-7ECA-61F4-84EA-833D745E00AF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B4A04DFA-B0F7-DBE3-1E91-C43DA378500F" name="tb_appointment_tb_user_FK">
+<ind_PK_UK id="D7C4682C-8666-7264-34D8-39D359F42033" name="tb_appointment_tb_procedure_type_FK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>3D542849-F0F2-E4DB-C678-179C525C5C40</generatorID>
-<ownerDesignName>inicio</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="05B5D6B6-CC45-B311-B5F3-D2C71CA11A3F"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B6D3625B-4873-1352-950A-0FA4A752103D" name="tb_appointment_tb_procedure_type_FK">
-<createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>46651D5D-00BB-4BE4-A1F0-100886E3DC96</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2C137373-ACFF-8146-BFEB-7A6FCED1DD32"/>
+<colUsage columnID="8A1820D7-B7F7-AC50-A885-ED3FC959A039"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5702847A-9EEC-5B99-F57E-4946C6C2C857" name="tb_appointment_tb_procedure_validation_FK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>A6888A45-C202-2BF6-963D-CC2D96FF5EDF</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA717176-377E-10BF-F317-A5B595D34FB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC3DF433-9E5E-DE9B-1C42-E3DB13F36644" name="tb_appointment_tb_user_FK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>3D542849-F0F2-E4DB-C678-179C525C5C40</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB78904C-0CE0-4C46-05D9-33A66FF148EF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

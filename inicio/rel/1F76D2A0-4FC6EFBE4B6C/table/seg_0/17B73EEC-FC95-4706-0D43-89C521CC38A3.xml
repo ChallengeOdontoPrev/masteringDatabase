@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="776311E0-7342-D4C6-0A74-327F1B6E6191" name="tb_procedure_validation">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17B73EEC-FC95-4706-0D43-89C521CC38A3" name="tb_procedure_validation">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>2991E5CC-6046-C60A-8F5E-B78194ABB1CB</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="554BE78C-4B24-A86A-024F-BC3A90A09ECB">
+<Column name="ID" id="7CC74A80-1911-EFE9-8708-CB1ABAE1C123">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>E6049527-9739-558C-AFF7-A253FFC681C4</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IMG_URL_INITIAL" id="625A720B-803F-BF63-50D0-67C43F0AE4E2">
+<Column name="IMG_URL_INITIAL" id="A9D7EA95-134D-CD8F-FEC4-F980834498B6">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>ED90C39B-2406-8976-312A-A33F3D912EF4</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -33,9 +33,9 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IMG_URL_FINAL" id="680C6691-4898-0081-FCE3-9D9D8D83D958">
+<Column name="IMG_URL_FINAL" id="E85B2608-7AD2-E26A-0B99-AB285C8D096F">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>F94F2182-2776-FFAD-8CEC-6968A9A14BF0</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -46,70 +46,72 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="procedure_status_ID" id="204D6609-5BFF-EBA6-8812-4DC727619813">
+<Column name="tb_procedure_status_ID" id="B1514FCF-4929-24E5-F487-9DC4AEA86473">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>123E94D7-244D-5BB7-5687-87320D515870</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="FC18FA7E-5C68-CB1A-FBB6-3E7B98AAF6DA" referredColumn="2AF2C84B-9F51-D76A-2E13-D67A5315C9C9"/>
+<colAssociation fkAssociation="28BA3D16-58E1-5242-A2DD-F6843CCEE9D0" referredColumn="47C2362D-654F-4D44-EC34-552107D6B6BC"/>
 </associations>
 </Column>
-<Column name="procedure_type_ID" id="4D530CA1-B2FB-0096-D698-213E29A56A79">
+<Column name="tb_procedure_type_ID" id="821ADB2B-543C-3478-09A9-743092F5A352">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>B38029F8-F0FD-747B-9D2D-1843986578D5</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8E9CA732-03CB-2504-7659-DC3FDC991A0D" referredColumn="A94DC681-2DC0-B13B-BFCC-D4E1221139CD"/>
+<colAssociation fkAssociation="4CDF1658-B9B7-8E05-3A30-EE61546E6862" referredColumn="6CCAA22D-F12D-0317-88AA-7B221E4CAAB5"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B9244C54-ABAC-5E8C-C7A0-95FF7D8EA1BF" name="tb_procedure_validation_PK">
+<ind_PK_UK id="7D3B1011-96DE-23CF-D4CB-9A137F2C7E55" name="tb_procedure_validation_PK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>3F51EF44-15BC-1CC2-3F9D-6D251541214A</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="554BE78C-4B24-A86A-024F-BC3A90A09ECB"/>
+<colUsage columnID="7CC74A80-1911-EFE9-8708-CB1ABAE1C123"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="694AF571-42C1-43BE-A8B8-9E966336FAA6" name="tb_procedure_validation_tb_procedure_status_FK">
+<ind_PK_UK id="95BAD07C-2918-42FB-CF46-1C33EAEF9320" name="tb_procedure_validation_tb_procedure_status_FK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>F65CBB46-2384-3C87-B135-8E7D2D78A5EC</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="204D6609-5BFF-EBA6-8812-4DC727619813"/>
+<colUsage columnID="B1514FCF-4929-24E5-F487-9DC4AEA86473"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8C3961B4-86BB-FEB5-D88E-CB8D83281CD1" name="tb_procedure_validation_tb_procedure_type_FK">
+<ind_PK_UK id="D3F2BDB3-4957-8145-4126-A3CFAEBD2820" name="tb_procedure_validation_tb_procedure_type_FK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
 <generatorID>A98248B1-3A2E-2D02-C92B-725FB0F1BB6A</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4D530CA1-B2FB-0096-D698-213E29A56A79"/>
+<colUsage columnID="821ADB2B-543C-3478-09A9-743092F5A352"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,28 +1,29 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EE2C00A-3787-F4C2-12B8-FF946917A179" name="tb_procedure_type">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11C5B766-FED0-F1DE-C576-DDBA0A74DB82" name="tb_procedure_status">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>668F4A54-3E71-D904-78C0-8A595CB27079</generatorID>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>C7C083EE-CC21-0B1A-5DD7-D7E254CCBD18</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="A94DC681-2DC0-B13B-BFCC-D4E1221139CD">
+<Column name="ID" id="47C2362D-654F-4D44-EC34-552107D6B6BC">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>386C9E4D-85C0-C2B8-EDFD-BB057020C48F</generatorID>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>F4412049-8A65-84FE-C6BB-F1F3DC2325C2</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAME" id="4F932C62-381F-9679-C66E-91E3FC57B824">
+<Column name="NAME" id="AD40CB80-E75A-2526-0B79-DE3BCEB4CE99">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>740BA5A4-E8EC-C315-6C95-4752C492A75B</generatorID>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>CC340D3D-84A8-0705-95C9-DE59A5C63197</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,10 +32,10 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESCRIPTION" id="81582149-FD4B-0754-759A-D0FD9FBE01B7">
+<Column name="DESCRIPTION" id="910EAEE0-EAD2-6884-3640-A2197D8DBC9D">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>A360A97B-5644-89A4-F7BF-516FFB8B5BDE</generatorID>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>A1BCEE0A-6B6B-D303-38E4-C4C52F16ED9B</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,16 +45,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="BF4DC0F7-4177-A3F7-D610-3C3B7C579AB2" name="tb_procedure_type_PK">
+<ind_PK_UK id="CE4932B7-615C-F222-AC0B-676B2AF01393" name="tb_procedure_status_PK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-07 18:57:47 UTC</createdTime>
-<generatorID>D7E41AD5-EE36-A7A6-A332-81A5AC2209B7</generatorID>
+<createdTime>2024-10-20 20:34:38 UTC</createdTime>
+<generatorID>0C8F3CBF-97A3-23A6-BAD1-EE76A4E73BF3</generatorID>
 <ownerDesignName>inicio</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A94DC681-2DC0-B13B-BFCC-D4E1221139CD"/>
+<colUsage columnID="47C2362D-654F-4D44-EC34-552107D6B6BC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

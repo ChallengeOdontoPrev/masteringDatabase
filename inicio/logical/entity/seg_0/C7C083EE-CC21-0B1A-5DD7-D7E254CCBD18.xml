@@ -25,7 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NAME" id="CC340D3D-84A8-0705-95C9-DE59A5C63197">
 <createdBy>Kaua</createdBy>
