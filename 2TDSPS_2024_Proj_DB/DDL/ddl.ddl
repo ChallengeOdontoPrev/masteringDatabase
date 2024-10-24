@@ -104,11 +104,13 @@ ALTER TABLE tb_procedure_validation ADD CONSTRAINT tb_procedure_validation_pk PR
 CREATE TABLE tb_user (
     id         NUMBER NOT NULL,
     created_at DATE NOT NULL,
-    cro        VARCHAR2(255 CHAR) UNIQUE,
-    email      VARCHAR2(255 CHAR) NOT NULL UNIQUE,
+    cro        VARCHAR2(255 CHAR),
+    email      VARCHAR2(255 CHAR) NOT NULL,
     name       VARCHAR2(255 CHAR) NOT NULL,
     password   VARCHAR2(255 CHAR) NOT NULL,
     role       VARCHAR2(255 CHAR) NOT NULL,
+    birth_date DATE NOT NULL,
+    rg         VARCHAR2(255 CHAR) NOT NULL,
     clinic_id  NUMBER NOT NULL
 );
 

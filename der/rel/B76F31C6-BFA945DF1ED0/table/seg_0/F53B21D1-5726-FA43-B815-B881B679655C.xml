@@ -91,6 +91,27 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="BIRTH_DATE" id="EA87ADF9-B66C-8176-222D-56A78BABBC10">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-24 12:59:36 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RG" id="48C01689-9854-A80C-C794-B5BA5E5D5B71">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-24 12:59:49 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CLINIC_ID" id="D9C2178E-B108-D25B-EE49-974A6AEF5F1C">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>

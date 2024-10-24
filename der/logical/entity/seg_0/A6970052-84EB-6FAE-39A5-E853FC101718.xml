@@ -119,6 +119,31 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="BIRTH_DATE" id="8221F3B3-8879-3809-AEEC-F9F1CAF89A18">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-24 12:57:39 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RG" id="854E1A58-378D-0AC3-A242-4D3788DE44AA">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-24 12:57:54 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="19445F79-9050-8FE1-743C-9594106D0C57" name="tb_user PK">
