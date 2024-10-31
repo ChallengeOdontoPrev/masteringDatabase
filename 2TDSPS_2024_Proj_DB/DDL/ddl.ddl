@@ -20,7 +20,7 @@ CREATE TABLE tb_address (
 CREATE TABLE tb_appointment (
     id                      NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     date_appointment        DATE NOT NULL,
-    time_appointment        TIMESTAMP NOT NULL,
+    time_appointment        VARCHAR2(255 CHAR) NOT NULL,
     created_at              TIMESTAMP NOT NULL,
     user_id                 NUMBER NOT NULL,
     clinic_id               NUMBER NOT NULL,

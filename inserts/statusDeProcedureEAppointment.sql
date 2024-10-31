@@ -13,6 +13,6 @@ INSERT INTO tb_procedure_status (name, description) VALUES ('Cancelada', 'Consul
 INSERT INTO tb_procedure_status (name, description) VALUES ('Não Compareceu', 'Paciente não compareceu à consulta.');
 INSERT INTO tb_procedure_status (name, description) VALUES ('Reagendada', 'Consulta foi reagendada para outra data.');
 
-
+COMMIT;
 
 select * from tb_procedure_status;
