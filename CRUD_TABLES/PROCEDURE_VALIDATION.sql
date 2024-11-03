@@ -137,7 +137,18 @@ CREATE OR REPLACE PROCEDURE DELETE_PROCEDURE_VALIDATION(
     p_id IN NUMBER
 )
 IS
+    v_count NUMBER;
 BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM tb_appointment
+    WHERE PROCEDURE_VALIDATION_ID = p_id;
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20012, 'Erro: Não é possível deletar a validação de procedimento, pois ela está referenciada em agendamentos.');
+        RETURN;
+    END IF;
+
     DELETE FROM tb_procedure_validation
     WHERE ID = p_id;
 
@@ -146,6 +157,14 @@ BEGIN
     ELSE
         DBMS_OUTPUT.PUT_LINE('Validação de procedimento excluída com sucesso.');
     END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20013, 'Erro: Não é possível deletar a validação de procedimento, pois ela está referenciada em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
 END;
 
 select * from tb_procedure_validation;
@@ -155,7 +174,7 @@ EXEC READ_PROCEDURE_VALIDATION(7);
 
 EXEC UPDATE_PROCEDURE_VALIDATION(7, 'http://example.com/initial_updated.jpg', 'http://example.com/final_updated.jpg', 1, 1);
 
-EXEC DELETE_PROCEDURE_VALIDATION(7);
+EXEC DELETE_PROCEDURE_VALIDATION(2);
 
 
 

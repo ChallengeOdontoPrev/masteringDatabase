@@ -113,9 +113,18 @@ BEGIN
     ELSE
         DBMS_OUTPUT.PUT_LINE('Endereço excluído com sucesso.');
     END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20005, 'Erro: Não é possível deletar o endereço, pois ele está referenciado em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
 END;
 
+select * from tb_address;
 EXEC INSERT_ADDRESS('Rua Josué', '931', 'São Paulo', 'SP', '09878-726');
-EXEC READ_ADDRESS(5);
+EXEC READ_ADDRESS(1);
 EXEC UPDATE_ADDRESS(5, 'Rua João', '999', 'São Paulo', 'RJ', '09878-722');
-EXEC DELETE_ADDRESS(5);
+EXEC DELETE_ADDRESS(1);

@@ -65,7 +65,18 @@ CREATE OR REPLACE PROCEDURE DELETE_PROCEDURE_TYPE(
     p_id IN NUMBER
 )
 IS
+    v_count NUMBER;
 BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM tb_procedure_validation
+    WHERE PROCEDURE_TYPE_ID = p_id;
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20010, 'Erro: Não é possível deletar o tipo de procedimento, pois ele está referenciado em validações de procedimento.');
+        RETURN;
+    END IF;
+
     DELETE FROM tb_procedure_type
     WHERE ID = p_id;
 
@@ -74,6 +85,14 @@ BEGIN
     ELSE
         DBMS_OUTPUT.PUT_LINE('Tipo de procedimento excluído com sucesso.');
     END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20011, 'Erro: Não é possível deletar o tipo de procedimento, pois ele está referenciado em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
 END;
 
 
@@ -84,6 +103,6 @@ EXEC READ_PROCEDURE_TYPE(21);
 
 EXEC UPDATE_PROCEDURE_TYPE(21, 'Exame', 'Tipo de procedimento de exame.');
 
-EXEC DELETE_PROCEDURE_TYPE(21);
+EXEC DELETE_PROCEDURE_TYPE(1);
 
 

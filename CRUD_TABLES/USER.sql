@@ -123,7 +123,18 @@ CREATE OR REPLACE PROCEDURE DELETE_USER(
     p_id IN NUMBER
 )
 IS
+    v_count NUMBER;
 BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM tb_appointment
+    WHERE USER_ID = p_id;
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20012, 'Erro: Não é possível deletar o usuário, pois ele está referenciado em outra tabela.');
+        RETURN;
+    END IF;
+
     DELETE FROM tb_user
     WHERE ID = p_id;
 
@@ -132,8 +143,15 @@ BEGIN
     ELSE
         DBMS_OUTPUT.PUT_LINE('Usuário excluído com sucesso.');
     END IF;
-END;
 
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20013, 'Erro: Não é possível deletar o usuário, pois ele está referenciado em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
+END;
 
 EXEC INSERT_USER('12345', 'user@example.com', 'User Test', 'pass123', 'DENTISTA', TO_DATE('1990-01-01', 'YYYY-MM-DD'), '12345678', 1);
 select * from tb_user;
@@ -142,7 +160,7 @@ EXEC READ_USER(5);
 
 EXEC UPDATE_USER(5, '54321', 'new_user@example.com', 'User Updated', 'newpass', 'user', TO_DATE('1992-02-02', 'YYYY-MM-DD'), '87654321');
 
-EXEC DELETE_USER(4);
+EXEC DELETE_USER(1);
 
 
 

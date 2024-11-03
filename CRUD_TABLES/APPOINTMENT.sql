@@ -190,7 +190,16 @@ BEGIN
     ELSE
         DBMS_OUTPUT.PUT_LINE('Agendamento excluído com sucesso.');
     END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20010, 'Erro: Não é possível deletar o agendamento, pois ele está referenciado em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
 END;
+
 
 select * from tb_appointment;
 EXEC INSERT_APPOINTMENT(TO_DATE('2024-11-01', 'YYYY-MM-DD'), '14:30', 1, 1, 1, 1, 1);

@@ -72,7 +72,18 @@ CREATE OR REPLACE PROCEDURE DELETE_PATIENT(
     p_id IN NUMBER
 )
 IS
+    v_count NUMBER;
 BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM tb_appointment
+    WHERE PATIENT_ID = p_id;
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20012, 'Erro: Não é possível deletar o paciente, pois ele está referenciado em outra tabela.');
+        RETURN;
+    END IF;
+
     DELETE FROM tb_patient
     WHERE ID = p_id;
 
@@ -81,6 +92,14 @@ BEGIN
     ELSE
         DBMS_OUTPUT.PUT_LINE('Paciente excluído com sucesso.');
     END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20013, 'Erro: Não é possível deletar o paciente, pois ele está referenciado em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
 END;
 
 select * from tb_patient;

@@ -126,11 +126,17 @@ CREATE OR REPLACE PROCEDURE DELETE_CLINIC(
     p_id IN NUMBER
 )
 IS
-    v_address_id tb_clinic.ADDRESS_ID%TYPE;
+    v_count NUMBER;
 BEGIN
-    SELECT ADDRESS_ID INTO v_address_id
-    FROM tb_clinic
-    WHERE ID = p_id;
+    SELECT COUNT(*)
+    INTO v_count
+    FROM tb_appointment
+    WHERE CLINIC_ID = p_id;
+
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20011, 'Erro: Não é possível deletar a clínica, pois ela está referenciada em agendamentos.');
+        RETURN;
+    END IF;
 
     DELETE FROM tb_clinic
     WHERE ID = p_id;
@@ -141,11 +147,15 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Clínica excluída com sucesso.');
     END IF;
 
-    DELETE_ADDRESS(v_address_id);
-
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
         RAISE_APPLICATION_ERROR(-20006, 'Erro: Nenhuma clínica encontrada para o ID informado.');
+    WHEN OTHERS THEN
+        IF SQLCODE = -2292 THEN
+            RAISE_APPLICATION_ERROR(-20012, 'Erro: Não é possível deletar a clínica, pois ela está referenciada em outra tabela.');
+        ELSE
+            RAISE;
+        END IF;
 END;
 
 
