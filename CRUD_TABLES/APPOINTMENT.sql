@@ -12,6 +12,8 @@ BEGIN
     END IF;
 END valida_data;
 
+-- Não utilizar este, pois ele será chamado na procedure abaixo (INSERT_APPOINTMENT_WITH_VALIDATION) para criar 
+-- um appointment junto com uma procedure_validation
 CREATE OR REPLACE PROCEDURE INSERT_APPOINTMENT(
     p_date_appointment IN DATE,
     p_time_appointment IN VARCHAR2,
@@ -71,6 +73,41 @@ BEGIN
         VALUES (p_date_appointment, p_time_appointment, SYSDATE, p_user_id, p_clinic_id, p_patient_id, p_procedure_type_id, p_procedure_validation_id);
         DBMS_OUTPUT.PUT_LINE('Agendamento inserido com sucesso.');
     END IF;
+END;
+
+CREATE OR REPLACE PROCEDURE INSERT_APPOINTMENT_WITH_VALIDATION(
+    p_date_appointment IN DATE,
+    p_time_appointment IN VARCHAR2,
+    p_user_id IN NUMBER,
+    p_clinic_id IN NUMBER,
+    p_patient_id IN NUMBER,
+    p_procedure_type_id IN NUMBER,
+    p_img_url_initial IN VARCHAR2,
+    p_img_url_final IN VARCHAR2,
+    p_procedure_status_id IN NUMBER
+)
+IS
+    v_procedure_validation_id NUMBER;
+BEGIN
+    INSERT_PROCEDURE_VALIDATION(
+        p_img_url_initial => p_img_url_initial,
+        p_img_url_final => p_img_url_final,
+        p_procedure_type_id => p_procedure_type_id,
+        p_procedure_status_id => p_procedure_status_id,
+        p_procedure_validation_id => v_procedure_validation_id 
+    );
+
+    INSERT_APPOINTMENT(
+        p_date_appointment => p_date_appointment,
+        p_time_appointment => p_time_appointment,
+        p_user_id => p_user_id,
+        p_clinic_id => p_clinic_id,
+        p_patient_id => p_patient_id,
+        p_procedure_type_id => p_procedure_type_id,
+        p_procedure_validation_id => v_procedure_validation_id
+    );
+
+    DBMS_OUTPUT.PUT_LINE('Agendamento com validação inserido com sucesso.');
 END;
 
 CREATE OR REPLACE PROCEDURE READ_APPOINTMENT(
@@ -202,7 +239,7 @@ END;
 
 
 select * from tb_appointment;
-EXEC INSERT_APPOINTMENT(TO_DATE('2024-11-01', 'YYYY-MM-DD'), '14:30', 1, 1, 1, 1, 1);
+EXEC INSERT_APPOINTMENT_WITH_VALIDATION(TO_DATE('2024-11-10', 'YYYY-MM-DD'), '10:00', 1, 1, 1, 1, 'https://example.com/inicial.jpg','https://example.com/final.jpg', 1);
 
 EXEC READ_APPOINTMENT(1);
 

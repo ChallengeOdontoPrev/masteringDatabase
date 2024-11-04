@@ -30,7 +30,8 @@ CREATE OR REPLACE PROCEDURE INSERT_PROCEDURE_VALIDATION(
     p_img_url_initial IN VARCHAR2,
     p_img_url_final IN VARCHAR2,
     p_procedure_type_id IN NUMBER,
-    p_procedure_status_id IN NUMBER
+    p_procedure_status_id IN NUMBER,
+    p_procedure_validation_id OUT NUMBER
 )
 IS
     v_exists_type NUMBER;
@@ -60,10 +61,12 @@ BEGIN
         RAISE_APPLICATION_ERROR(-20006, 'Erro: O status de procedimento com ID ' || p_procedure_status_id || ' não existe.');
     ELSE
         INSERT INTO tb_procedure_validation(IMG_URL_INITIAL, IMG_URL_FINAL, PROCEDURE_TYPE_ID, PROCEDURE_STATUS_ID)
-        VALUES (p_img_url_initial, p_img_url_final, p_procedure_type_id, p_procedure_status_id);
+        VALUES (p_img_url_initial, p_img_url_final, p_procedure_type_id, p_procedure_status_id)
+        RETURNING ID INTO p_procedure_validation_id;
         DBMS_OUTPUT.PUT_LINE('Validação de procedimento inserida com sucesso.');
     END IF;
 END;
+
 
 CREATE OR REPLACE PROCEDURE READ_PROCEDURE_VALIDATION(
     p_id IN NUMBER
