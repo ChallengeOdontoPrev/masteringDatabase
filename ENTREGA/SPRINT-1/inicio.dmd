@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="inicio" id="942917C4-9210-E6B0-A32C-2BC9A59DA38B" version="3.5">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:17:02 UTC</createdTime>
+<ownerDesignName>inicio</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>942917C4-9210-E6B0-A32C-2BC9A59DA38B</designId>
+</OSDM_Design>

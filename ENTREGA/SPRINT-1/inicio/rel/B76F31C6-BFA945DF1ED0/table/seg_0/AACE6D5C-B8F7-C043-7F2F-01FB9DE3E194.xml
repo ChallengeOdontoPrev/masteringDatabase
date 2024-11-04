@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AACE6D5C-B8F7-C043-7F2F-01FB9DE3E194" name="TB_PROCEDURE_TYPE">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>7DFDBFD7-3FB6-A848-529A-1CA25C01E5AD</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<abbreviation>TB_PROC_TYPE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1A59CA1D-A866-62EF-B409-E67B1784841C">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>0F88C5EA-AFC9-0421-D8D8-95BFB9E7ED5E</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="E9438ED9-CE55-F28B-C854-F6DE646D2302">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>AC25A372-FF80-7A26-0666-4B413DD6D577</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="4950F0FC-A677-489B-B61A-32BEDA72ECB5">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>F3B4EBB4-1431-2335-0AD7-6C3917E9F939</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25560D5F-691C-CEAA-FB3D-91FF36FE4B7B" name="TB_PROCEDURE_TYPE_PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>819B603A-EE0D-B004-2EF5-9B907D49800D</generatorID>
+<ownerDesignName>inicio</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A59CA1D-A866-62EF-B409-E67B1784841C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
