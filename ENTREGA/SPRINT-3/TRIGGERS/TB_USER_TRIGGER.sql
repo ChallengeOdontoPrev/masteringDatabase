@@ -70,10 +70,10 @@ END;
 --UPDATE
 BEGIN
     user_pkg.UPDATE_USER(
-        p_id => 4,
+        p_id => 6,
         p_cro => '54321',
         p_email => 'new_user@example.com',
-        p_name => 'User Updated',
+        p_name => 'Nome Banco',
         p_password => 'newpass',
         p_role => 'user',
         p_birth_date => TO_DATE('1992-02-02', 'YYYY-MM-DD'),
@@ -84,7 +84,7 @@ END;
 
 --DELETE
 BEGIN
-    user_pkg.DELETE_USER(p_id => 4);
+    user_pkg.DELETE_USER(p_id => 6);
 END;
 
 --VALIDAÇÃO AUDIT

@@ -59,17 +59,17 @@ END;
 --UPDATE
 BEGIN
     clinic_pkg.UPDATE_CLINIC(
-        p_id => 14,
+        p_id => 16,
         p_cnpj => '12.345.678/0001-90',
         p_email => 'novoemail@clinica.com',
-        p_name => 'Clinica Atualizada',
+        p_name => 'Clinica Atualizada BD',
         p_phone => '(11) 88888-8888'
     );
 END;
 
 --DELETE
 BEGIN
-    clinic_pkg.DELETE_CLINIC(p_id => 15);
+    clinic_pkg.DELETE_CLINIC(p_id => 16);
 END;
 
 

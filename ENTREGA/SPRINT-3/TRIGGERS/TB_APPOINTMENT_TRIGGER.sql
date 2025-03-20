@@ -68,8 +68,10 @@ END;
 
 --DELETE
 BEGIN
-    appointment_pkg.DELETE_APPOINTMENT(p_id => 15);
+    appointment_pkg.DELETE_APPOINTMENT(p_id => 17);
 END;
 
 --VALIDAÇÃO AUDIT
 SELECT * FROM tb_appointment_audit ORDER BY change_timestamp DESC;
+
+commit;
