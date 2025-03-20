@@ -64,8 +64,8 @@ BEGIN
             rec.clinic_count_city
         );
     END LOOP;
- 
-    CLOSE clinic_cursor; 
+
+    CLOSE clinic_cursor;  
     RETURN result;  
 END func_clinic_address_report;
 

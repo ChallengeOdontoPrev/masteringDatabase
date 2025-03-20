@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AACE6D5C-B8F7-C043-7F2F-01FB9DE3E194" name="TB_PROCEDURE_TYPE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="233E0C80-D7B6-E729-28D3-50EC7C5C1038" name="TB_PROCEDURE_STATUS">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>7DFDBFD7-3FB6-A848-529A-1CA25C01E5AD</generatorID>
+<generatorID>0A06BC0F-C0D2-2DE4-48BC-B35EFB8D42AD</generatorID>
 <ownerDesignName>der</ownerDesignName>
-<abbreviation>TB_PROC_TYPE</abbreviation>
+<abbreviation>TB_PROC_STS</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="1A59CA1D-A866-62EF-B409-E67B1784841C">
+<Column name="ID" id="A8FDAEAF-3281-FC98-ABD9-5CEDB38F95D3">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>0F88C5EA-AFC9-0421-D8D8-95BFB9E7ED5E</generatorID>
+<generatorID>9CEDC47A-878B-B45F-FF1A-FE336685DB18</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,10 +20,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAME" id="E9438ED9-CE55-F28B-C854-F6DE646D2302">
+<Column name="NAME" id="7480CD83-8A50-0F9D-53F4-20546929610D">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>AC25A372-FF80-7A26-0666-4B413DD6D577</generatorID>
+<generatorID>0DBC9507-C7BF-DF6F-2506-8E0291374C20</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,32 +32,10 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESCRIPTION" id="4950F0FC-A677-489B-B61A-32BEDA72ECB5">
+<Column name="DESCRIPTION" id="9C516EE6-50E2-5988-FC72-AE0F5B179472">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>F3B4EBB4-1431-2335-0AD7-6C3917E9F939</generatorID>
-<ownerDesignName>der</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLASS_INITIAL" id="4FE21FA2-EF4D-4012-5EB4-14D4D287C6DB">
-<createdBy>Kaua</createdBy>
-<createdTime>2025-01-25 02:17:12 UTC</createdTime>
-<ownerDesignName>der</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLASS_FINAL" id="8C0A8681-C09D-82E4-5AF2-9FB4D8D5D46B">
-<createdBy>Kaua</createdBy>
-<createdTime>2025-01-25 02:17:19 UTC</createdTime>
+<generatorID>CF345334-942F-E461-4945-EB00F79FC13A</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,16 +46,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="25560D5F-691C-CEAA-FB3D-91FF36FE4B7B" name="TB_PROCEDURE_TYPE_PK">
+<ind_PK_UK id="6E877C4D-51CE-C50C-6F3A-875DBB90AB6E" name="TB_PROCEDURE_STATUS_PK">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>819B603A-EE0D-B004-2EF5-9B907D49800D</generatorID>
+<generatorID>224251C8-8EBC-C40B-312A-CF189B4C4EC9</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1A59CA1D-A866-62EF-B409-E67B1784841C"/>
+<colUsage columnID="A8FDAEAF-3281-FC98-ABD9-5CEDB38F95D3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

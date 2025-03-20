@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7DFDBFD7-3FB6-A848-529A-1CA25C01E5AD" name="TB_PROCEDURE_TYPE">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0A06BC0F-C0D2-2DE4-48BC-B35EFB8D42AD" name="TB_PROCEDURE_STATUS">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-21 11:25:35 UTC</createdTime>
+<createdTime>2024-10-21 11:26:26 UTC</createdTime>
 <ownerDesignName>der</ownerDesignName>
 <engineerTo>
 <item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
@@ -14,11 +14,11 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>TB_PROC_TYPE</shortName>
+<shortName>TB_PROC_STS</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID" id="0F88C5EA-AFC9-0421-D8D8-95BFB9E7ED5E">
+<Attribute name="ID" id="9CEDC47A-878B-B45F-FF1A-FE336685DB18">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-21 11:25:48 UTC</createdTime>
+<createdTime>2024-10-21 11:27:00 UTC</createdTime>
 <ownerDesignName>der</ownerDesignName>
 <engineerTo>
 <item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
@@ -28,9 +28,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="NAME" id="AC25A372-FF80-7A26-0666-4B413DD6D577">
+<Attribute name="NAME" id="0DBC9507-C7BF-DF6F-2506-8E0291374C20">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-21 11:25:57 UTC</createdTime>
+<createdTime>2024-10-21 11:27:08 UTC</createdTime>
 <ownerDesignName>der</ownerDesignName>
 <engineerTo>
 <item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
@@ -41,35 +41,9 @@
 <dataTypeSize>255 CHAR</dataTypeSize>
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DESCRIPTION" id="F3B4EBB4-1431-2335-0AD7-6C3917E9F939">
+<Attribute name="DESCRIPTION" id="CF345334-942F-E461-4945-EB00F79FC13A">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-21 11:26:07 UTC</createdTime>
-<ownerDesignName>der</ownerDesignName>
-<engineerTo>
-<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="CLASS_INITIAL" id="8640BDDE-4DC0-0326-B43C-698813F25291">
-<createdBy>Kaua</createdBy>
-<createdTime>2025-01-25 02:13:46 UTC</createdTime>
-<ownerDesignName>der</ownerDesignName>
-<engineerTo>
-<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="CLASS_FINAL" id="B47F82D6-3C32-FD2D-A35B-C77DCACCEE5E">
-<createdBy>Kaua</createdBy>
-<createdTime>2025-01-25 02:14:12 UTC</createdTime>
+<createdTime>2024-10-21 11:27:21 UTC</createdTime>
 <ownerDesignName>der</ownerDesignName>
 <engineerTo>
 <item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
@@ -82,16 +56,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="819B603A-EE0D-B004-2EF5-9B907D49800D" name="TB_PROCEDURE_TYPE PK">
+<identifier id="224251C8-8EBC-C40B-312A-CF189B4C4EC9" name="TB_PROCEDURE_STATUS PK">
 <createdBy>Kaua</createdBy>
-<createdTime>2024-10-21 11:25:56 UTC</createdTime>
+<createdTime>2024-10-21 11:27:07 UTC</createdTime>
 <ownerDesignName>der</ownerDesignName>
 <engineerTo>
 <item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0F88C5EA-AFC9-0421-D8D8-95BFB9E7ED5E</attributeRef>
+<attributeRef>9CEDC47A-878B-B45F-FF1A-FE336685DB18</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

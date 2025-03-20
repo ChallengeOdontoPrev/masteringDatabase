@@ -66,13 +66,17 @@ CREATE TABLE tb_procedure_status (
 CREATE TABLE tb_procedure_type (
     id          NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name        VARCHAR2(255 CHAR) NOT NULL UNIQUE,
-    description VARCHAR2(255 CHAR) NOT NULL
+    description VARCHAR2(255 CHAR) NOT NULL,
+    class_initial       VARCHAR2(255 CHAR) NOT NULL,
+    class_final       VARCHAR2(255 CHAR) NOT NULL
 );
 
 CREATE TABLE tb_procedure_validation (
     id                  NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     img_url_initial     VARCHAR2(255 CHAR),
     img_url_final       VARCHAR2(255 CHAR),
+    class_initial       VARCHAR2(255 CHAR),
+    class_final       VARCHAR2(255 CHAR),
     procedure_type_id   NUMBER NOT NULL,
     procedure_status_id NUMBER NOT NULL
 );

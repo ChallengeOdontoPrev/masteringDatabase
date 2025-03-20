@@ -1,18 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AACE6D5C-B8F7-C043-7F2F-01FB9DE3E194" name="TB_PROCEDURE_TYPE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F368E130-1F98-8145-75DF-A73D60AD5BA1" name="TB_ADDRESS">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>7DFDBFD7-3FB6-A848-529A-1CA25C01E5AD</generatorID>
+<generatorID>5FF30433-4BFF-1C1B-63DC-E1BFABD97EE5</generatorID>
 <ownerDesignName>der</ownerDesignName>
-<abbreviation>TB_PROC_TYPE</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="1A59CA1D-A866-62EF-B409-E67B1784841C">
+<Column name="ID" id="B72E6AF6-180E-E3C9-45ED-4AC1A6A60010">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>0F88C5EA-AFC9-0421-D8D8-95BFB9E7ED5E</generatorID>
+<generatorID>BCF42F0B-9341-0D34-B9E3-612E854C3430</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,10 +19,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAME" id="E9438ED9-CE55-F28B-C854-F6DE646D2302">
+<Column name="STREET" id="C8F9A905-FF68-FF0A-D9F2-A74659DA6C90">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>AC25A372-FF80-7A26-0666-4B413DD6D577</generatorID>
+<generatorID>46BC332A-6D05-CFD4-3602-460021CA5DBC</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,10 +31,10 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESCRIPTION" id="4950F0FC-A677-489B-B61A-32BEDA72ECB5">
+<Column name="NUM" id="C35F1E81-4F74-A7EE-3C62-C78FC011EDA7">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>F3B4EBB4-1431-2335-0AD7-6C3917E9F939</generatorID>
+<generatorID>FBEF22D5-EF47-71FF-4573-53166218FCA3</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,9 +43,10 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLASS_INITIAL" id="4FE21FA2-EF4D-4012-5EB4-14D4D287C6DB">
+<Column name="CITY" id="E8BB8CFA-FB29-7663-4257-36B64030504B">
 <createdBy>Kaua</createdBy>
-<createdTime>2025-01-25 02:17:12 UTC</createdTime>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>90F1E7A8-8570-F55B-99AC-7A8A6676797D</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -55,9 +55,22 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLASS_FINAL" id="8C0A8681-C09D-82E4-5AF2-9FB4D8D5D46B">
+<Column name="STATE" id="92A9B0A6-9806-31BB-0F7D-A011B59D74EC">
 <createdBy>Kaua</createdBy>
-<createdTime>2025-01-25 02:17:19 UTC</createdTime>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>C1438FF0-85C6-61EC-B946-B2A6208DF74B</generatorID>
+<ownerDesignName>der</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZIP_CODE" id="03A8CA23-2196-6531-34F9-B646AD22A4ED">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:48:13 UTC</createdTime>
+<generatorID>A77E9AD7-1C43-0A13-CC60-F68F2EBF58BE</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,16 +81,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="25560D5F-691C-CEAA-FB3D-91FF36FE4B7B" name="TB_PROCEDURE_TYPE_PK">
+<ind_PK_UK id="76D112E5-2111-C533-6622-490495B4E4FB" name="TB_ADDRESS_PK">
 <createdBy>Kaua</createdBy>
 <createdTime>2024-10-21 11:48:13 UTC</createdTime>
-<generatorID>819B603A-EE0D-B004-2EF5-9B907D49800D</generatorID>
+<generatorID>942BAD85-09AD-9187-F153-DEB65E185441</generatorID>
 <ownerDesignName>der</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1A59CA1D-A866-62EF-B409-E67B1784841C"/>
+<colUsage columnID="B72E6AF6-180E-E3C9-45ED-4AC1A6A60010"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

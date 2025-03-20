@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3634506-4B67-68C9-373E-08F5B8D9FECF" name="TB_APPOINTMENT">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:29:23 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TB_APPOINT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="3FD8C547-D649-19E7-EC20-B84888979146">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:29:39 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_APPOINTMENT" id="1035B089-30E0-6F8D-8434-35C7F19587EA">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:29:47 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIME_APPOINTMENT" id="93BD15D1-7FDD-1DE6-C2DD-7CFF5B906B38">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:30:01 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED_AT" id="9B3CBF05-EDE5-CAD4-08F1-38021F570B68">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:30:36 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="ACAF84BF-5023-0C7F-CD6B-D6F2BC707C9D">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:45:29 UTC</createdTime>
+<generatorID>81A3535B-FED9-28F7-FF61-345DF05D780B</generatorID>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<referedAttribute>3FB3DABA-5845-BFF2-4DB3-22A2DA65F284</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="5C69EC82-3258-31E2-D99F-B198EE923B5B">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:45:33 UTC</createdTime>
+<generatorID>781DC4ED-1A41-5CD2-E9BD-F4C7804C1330</generatorID>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<referedAttribute>9F77C098-B252-E331-47B8-F65FD141A002</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID3" id="FE10B237-F195-4B69-FCD7-F08548032FCE">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:46:04 UTC</createdTime>
+<generatorID>5DCDCD9E-8AEE-CE89-F770-FAE5837FA56C</generatorID>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<referedAttribute>D321C7E4-E0A5-E699-72F7-592272C585D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID4" id="EC10C8C8-E771-F54D-F256-B9FEF47C2037">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:46:11 UTC</createdTime>
+<generatorID>5929D986-E13F-9076-F5BE-5B6E53E64D40</generatorID>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<referedAttribute>0F88C5EA-AFC9-0421-D8D8-95BFB9E7ED5E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID5" id="AA5325C9-A20B-F4F7-F08C-4F41F31294CB">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:46:18 UTC</createdTime>
+<generatorID>723931F9-02EC-1481-A445-14EEECAAC464</generatorID>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<referedAttribute>A1D66EE5-12F6-1BB3-3CD8-4E29E6BA85F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE19DDAA-B6A8-C1CE-57C2-5284C1030EA3" name="TB_APPOINTMENT PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-10-21 11:29:46 UTC</createdTime>
+<ownerDesignName>der</ownerDesignName>
+<engineerTo>
+<item key="B76F31C6-0F5D-3118-2992-BFA945DF1ED0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3FD8C547-D649-19E7-EC20-B84888979146</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
